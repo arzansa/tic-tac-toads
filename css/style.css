@@ -1,20 +1,62 @@
 body {
-    background-color: gainsboro;
+    background-color: rgb(26, 1, 76);
     /* Use a system font, if none are available use an available sans-sarif */
     font-family: system-ui, sans-serif;
     margin: 0;
-  }
+    color: rgb(83, 181, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+}
   
-  .board {
+#board {
     display: flex;
     flex-wrap: wrap;
     width: 325px;
-  }
-  
-  .sqr {
+    display: none;
+}
+
+#textBox {
+    display: flex;
+    flex-wrap: wrap;
+    width: 325px;
+    display: none;
+    border-color: azure;
+    border-width: 10vh;
+    position: relative;
+}
+
+.sqr {
     width: 30%;
     aspect-ratio: 1/1;
-    border: 3px solid black;
+    border: 3px solid rgb(218, 198, 253);
     font-size: 64px;
     text-align: center;
-  }
+}
+
+.buttons {
+    color: rgb(136, 136, 255);
+    background-color: rgb(32, 51, 175);
+}
+
+#startButton {
+    height: 10vh;
+    width: 50vh;
+    font-size: 40px;
+}
+
+#gameText {
+    height: 10vh;
+    width: 50vh;
+    font-size: 24px;
+}
+
+#continueButton {
+    position: absolute;
+    right: 20px;
+    bottom: -20px;
+}
