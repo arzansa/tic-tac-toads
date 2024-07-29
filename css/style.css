@@ -83,6 +83,21 @@ body {
     color: rgb(255, 219, 254);
 }
 
+.hp-bar-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 20px;
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    color: rgb(255, 219, 254);
+    z-index: 9;
+}
+
 .hp-bar-fill {
     height: 100%;
     background-color: rgb(56, 159, 238);
@@ -109,4 +124,5 @@ body {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    display: none;
   }
