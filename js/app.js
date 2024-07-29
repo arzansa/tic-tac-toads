@@ -8,10 +8,10 @@ const hpBars = document.querySelectorAll('.hp-bar');
 const dialogues = ['You will need to find the missing parts of your ship to return home.',
     'As you venture out into the strange land, you encounter a giant toad! He snarls menacingly...',
     'As you draw your weapon, he begins drawing something in the sand.',
-    'He wants to play... Tic Tac Toe?',
+    'He wants to play... Tic-Tac-Toe?',
     'This is the game board. When it is your attack turn, you will play first.',
     "You and the enemy toad both have hit points. The first to 0 loses the battle. If you lose, it's game over!",
-    'Each round of Tic Tac Toe has 3 outcomes.',
+    'Each round of Tic-Tac-Toe has 3 outcomes.',
     'You win: You do full damage to the toad.',
     'Tie: The toad blocks some of your damage.',
     'Toad wins: The toad evades your attack, dealing no damage.',
@@ -52,13 +52,15 @@ function init() {
 }
 
 function render() {
-
+    updateBoard();
+    updateMessage();
 }
 
 function updateBoard() {
     board.forEach((square, sqrIdx) => {
-        if (squareEls[sqrIdx] === '') {
-            square.innerText = 'A';
+        if (board[sqrIdx] === '') {
+            console.log(sqrIdx);
+            squareEls[sqrIdx].innerText = 'A';
         }
     });
 }
