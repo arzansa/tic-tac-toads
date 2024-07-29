@@ -30,6 +30,10 @@ body {
     position: relative;
 }
 
+#message {
+    display: none;
+}
+
 .sqr {
     width: 30%;
     aspect-ratio: 1/1;
@@ -71,6 +75,8 @@ body {
     border-radius: 10px;
     overflow: hidden;
     display: none;
+    text-align: center;
+    color: white;
 }
 
 .hp-bar-fill {
