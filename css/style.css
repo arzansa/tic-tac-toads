@@ -30,6 +30,10 @@ body {
     position: relative;
 }
 
+#attacker {
+    display: none;
+}
+
 #message {
     display: none;
 }
@@ -76,7 +80,7 @@ body {
     overflow: hidden;
     display: none;
     text-align: center;
-    color: white;
+    color: rgb(255, 219, 254);
 }
 
 .hp-bar-fill {
@@ -94,3 +98,15 @@ body {
     top: 20px;
     right: 20px;
 }
+
+#reset {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: rgb(56, 159, 238);
+    color: rgb(255, 219, 254);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
