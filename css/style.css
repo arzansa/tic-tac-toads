@@ -59,4 +59,32 @@ body {
     position: absolute;
     right: 20px;
     bottom: -20px;
+    height: 3vh;
+}
+
+.hp-bar {
+    position: absolute;
+    width: 200px;
+    height: 20px;
+    background-color: gray;
+    border: 2px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+    display: none;
+}
+
+.hp-bar-fill {
+    height: 100%;
+    background-color: rgb(56, 159, 238);
+}
+
+
+#playerHP {
+    top: 20px;
+    left: 20px;
+}
+
+#enemyHP {
+    top: 20px;
+    right: 20px;
 }
